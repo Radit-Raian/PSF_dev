@@ -3,14 +3,14 @@ CATALOG_TYPE     ASCII_HEAD
 PARAMETERS_NAME  /home/raditraian1107/PSF_development/FITS_images/se_in_out/default.param
 
 DETECT_TYPE      CCD
-DETECT_MINAREA   5
-DETECT_THRESH    1.0
+DETECT_MINAREA   8
+DETECT_THRESH    1.5
 ANALYSIS_THRESH  1.5
 
 FILTER           Y
-FILTER_NAME      /usr/local/share/sextractor/gauss_3.0_5x5.conv
+FILTER_NAME      /usr/local/share/sextractor/gauss_5.0_9x9.conv
 
-DEBLEND_NTHRESH  32
+DEBLEND_NTHRESH  64
 DEBLEND_MINCONT  0.0005
 
 CLEAN            Y
@@ -27,7 +27,7 @@ PHOT_AUTOPARAMS  2.5, 3.5
 PHOT_PETROPARAMS 2.0, 3.5
 PHOT_AUTOAPERS   0.0,0.0
 
-SATUR_LEVEL      100000.0
+SATUR_LEVEL      50000.0
 SATUR_KEY        SATURATE
 
 MAG_ZEROPOINT    22.5
@@ -44,7 +44,7 @@ CHECKIMAGE_TYPE  SEGMENTATION,BACKGROUND,BACKGROUND_RMS
 CHECKIMAGE_NAME  /home/raditraian1107/PSF_development/FITS_images/se_in_out//segmap_bkg_bySExtractor.fits,/home/raditraian1107/PSF_development/FITS_images/se_in_out//bkg_bkg_bySExtractor.fits,/home/raditraian1107/PSF_development/FITS_images/se_in_out//bkg_rms_bkg_bySExtractor.fits
 
 BACK_TYPE        AUTO
-BACK_SIZE        64
+BACK_SIZE        256
 BACK_FILTERSIZE  3
 
 MEMORY_OBJSTACK  50000
