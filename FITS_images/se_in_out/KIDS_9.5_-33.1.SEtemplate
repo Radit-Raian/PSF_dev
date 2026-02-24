@@ -1,0 +1,58 @@
+CATALOG_NAME     /home/rabbit/PSF_BuildUp/FITS_images/se_in_out/outparams_KIDS_9.5_-33.1.cat
+CATALOG_TYPE     ASCII_HEAD
+PARAMETERS_NAME  /home/rabbit/PSF_BuildUp/FITS_images/se_in_out/default.param
+
+DETECT_TYPE      CCD
+DETECT_MINAREA   5
+DETECT_THRESH    1.0
+ANALYSIS_THRESH  1.5
+
+FILTER           Y
+FILTER_NAME      /usr/local/share/sextractor/gauss_3.0_7x7.conv
+
+DEBLEND_NTHRESH  32
+DEBLEND_MINCONT  0.0005
+
+CLEAN            Y
+CLEAN_PARAM      1.0
+
+WEIGHT_TYPE      NONE
+WEIGHT_IMAGE     -
+
+FLAG_IMAGE       flag.fits
+FLAG_TYPE        OR
+
+PHOT_APERTURES   10
+PHOT_AUTOPARAMS  2.5,3.5
+PHOT_PETROPARAMS 2.0,3.5
+PHOT_AUTOAPERS   0.0,0.0
+
+SATUR_LEVEL      1e10
+SATUR_KEY        SATURATE
+
+MAG_ZEROPOINT    0.0
+MAG_GAMMA        4.0
+GAIN             0
+GAIN_KEY         GAIN
+PIXEL_SCALE      0.2
+
+SEEING_FWHM      0.6659591674804688
+STARNNW_NAME     /home/rabbit/PSF_BuildUp/FITS_images/se_in_out/default.nnw
+PSF_NAME         /home/rabbit/PSF_BuildUp/FITS_images/se_in_out/default.psf
+
+CHECKIMAGE_TYPE  SEGMENTATION,BACKGROUND,BACKGROUND_RMS
+CHECKIMAGE_NAME  /home/rabbit/PSF_BuildUp/FITS_images/se_in_out//segmap_KIDS_9.5_-33.1.fits,/home/rabbit/PSF_BuildUp/FITS_images/se_in_out//bkg_KIDS_9.5_-33.1.fits,/home/rabbit/PSF_BuildUp/FITS_images/se_in_out//bkg_rms_KIDS_9.5_-33.1.fits
+
+BACK_TYPE        AUTO
+BACK_SIZE        256
+BACK_FILTERSIZE  3
+
+MEMORY_OBJSTACK  50000
+MEMORY_PIXSTACK  3000000
+MEMORY_BUFSIZE   8000
+
+VERBOSE_TYPE     NORMAL
+HEADER_SUFFIX    .head
+WRITE_XML        N
+XML_NAME         sex.xml
+XSL_URL          file:///usr/local/share/sextractor/sextractor.xsl
