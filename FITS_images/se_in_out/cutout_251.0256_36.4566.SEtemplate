@@ -32,7 +32,7 @@ SATUR_KEY        SATURATE
 
 MAG_ZEROPOINT    0.0
 MAG_GAMMA        4.0
-GAIN             0
+GAIN             28993018510000.0
 GAIN_KEY         GAIN
 PIXEL_SCALE      0.2
 
