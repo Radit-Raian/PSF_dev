@@ -3,15 +3,15 @@ CATALOG_TYPE     ASCII_HEAD
 PARAMETERS_NAME  /home/rabbit/PSF_BuildUp/FITS_images/se_in_out/default.param
 
 DETECT_TYPE      CCD
-DETECT_MINAREA   5
-DETECT_THRESH    1.0
-ANALYSIS_THRESH  1.5
+DETECT_MINAREA   20
+DETECT_THRESH    3.0
+ANALYSIS_THRESH  3.0
 
 FILTER           Y
-FILTER_NAME      /usr/local/share/sextractor/gauss_3.0_7x7.conv
+FILTER_NAME      /usr/local/share/sextractor/gauss_3.0_5x5.conv
 
 DEBLEND_NTHRESH  32
-DEBLEND_MINCONT  0.0005
+DEBLEND_MINCONT  0.005
 
 CLEAN            Y
 CLEAN_PARAM      1.0
@@ -27,12 +27,12 @@ PHOT_AUTOPARAMS  2.5,3.5
 PHOT_PETROPARAMS 2.0,3.5
 PHOT_AUTOAPERS   0.0,0.0
 
-SATUR_LEVEL      1e10
+SATUR_LEVEL      4.0e-08
 SATUR_KEY        SATURATE
 
 MAG_ZEROPOINT    0.0
 MAG_GAMMA        4.0
-GAIN             28993018510000.0
+GAIN             1.0
 GAIN_KEY         GAIN
 PIXEL_SCALE      0.2
 
@@ -44,7 +44,7 @@ CHECKIMAGE_TYPE  SEGMENTATION,BACKGROUND,BACKGROUND_RMS
 CHECKIMAGE_NAME  /home/rabbit/PSF_BuildUp/FITS_images/se_in_out//segmap_KIDS_9.5_-33.1.fits,/home/rabbit/PSF_BuildUp/FITS_images/se_in_out//bkg_KIDS_9.5_-33.1.fits,/home/rabbit/PSF_BuildUp/FITS_images/se_in_out//bkg_rms_KIDS_9.5_-33.1.fits
 
 BACK_TYPE        AUTO
-BACK_SIZE        256
+BACK_SIZE        128
 BACK_FILTERSIZE  3
 
 MEMORY_OBJSTACK  50000
