@@ -11,7 +11,7 @@ FILTER           Y
 FILTER_NAME      /usr/local/share/sextractor/gauss_3.0_5x5.conv
 
 DEBLEND_NTHRESH  32
-DEBLEND_MINCONT  0.005
+DEBLEND_MINCONT  0.001
 
 CLEAN            Y
 CLEAN_PARAM      1.0
