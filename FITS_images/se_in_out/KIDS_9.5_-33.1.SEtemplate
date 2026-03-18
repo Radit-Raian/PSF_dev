@@ -3,9 +3,9 @@ CATALOG_TYPE     ASCII_HEAD
 PARAMETERS_NAME  /home/rabbit/PSF_BuildUp/FITS_images/se_in_out/default.param
 
 DETECT_TYPE      CCD
-DETECT_MINAREA   20
-DETECT_THRESH    3.0
-ANALYSIS_THRESH  3.0
+DETECT_MINAREA   5
+DETECT_THRESH    2.0
+ANALYSIS_THRESH  2.0
 
 FILTER           Y
 FILTER_NAME      /usr/local/share/sextractor/gauss_3.0_5x5.conv
