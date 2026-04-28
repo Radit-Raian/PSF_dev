@@ -1,4 +1,4 @@
-# PSF_dev
+# PoLaRiS: Point-spread Light Reconstruction for Stars
 
 **Point Spread Function (PSF) Development Pipeline for Astronomical Imaging!!**
 
